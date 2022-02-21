@@ -1,0 +1,4 @@
+Fundamentos: Comandos Bash,historia do Unix. Introdução à HTML e CSS. Utilização de Git e do Git-Hub
+Front-End: Aprender e utilizar JavaScript em sua completude e conseguir fazer sites de forma satisfatoria. 
+Back-end: aprender a utilizar JS no back
+Ciencia da Computação: Pyton da massa.
