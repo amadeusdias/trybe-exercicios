@@ -1,0 +1,300 @@
+  287  ls
+  288  cd ..
+  289  rmdir backup
+  290  rm -rf backup
+  291  ls
+  292  touch trybe_backup1
+  293  ls
+  294  mkdir Backup
+  295  ls
+  296  mv trybe_backup1 /home/amadeus/Documentos/unix_tests/Backup
+  297  ls
+  298  mv newtrybe.txt /home/amadeus/Documento/unix_tests/Backup
+  299  ls
+  300  mv newtrybe.txt /home/amadeus/Documentos/unix_tests/Backup
+  301  ls
+  302  rm -rf Backup
+  303  ls
+  304  cd ..
+  305  cd Documentos
+  306  ls
+  307  cd unix_tests
+  308  ls
+  309  head -5 skills.txt
+  310  tail -4 skills.txt
+  311  ls
+  312  rm skills.txt
+  313  ls
+  314  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  315  ls
+  316  clear
+  317  sl
+  318  ls
+  319  clear
+  320  sl
+  321  ls
+  322  clear
+  323  ls
+  324  cat countries.txt
+  325  less countries.txt
+  326  clear
+  327  ls
+  328  pwd
+  329  man less
+  330  ls
+  331  cd ..
+  332  ls
+  333  cd Modelos
+  334  ls
+  335  cd ..
+  336  ls
+  337  mkdir Trybe_Curso
+  338  ls
+  339  cd Trybe_Curso
+  340  touch README.md
+  341  ls
+  342  cd..
+  343  cd ..
+  344  ls
+  345  cd Trybe_Curso
+  346  touch readme.txt
+  347  cat > readme.txt
+  348  ls
+  349  cat readme.txt
+  350  ls
+  351  cd ..
+  352  cd /home/amadeus/Documentos
+  353  ls
+  354  cd unix_tests
+  355  ls
+  356  less countries.txt
+  357  grep countries.txt Brazil
+  358  grep Brazil
+  359  ls
+  360  cd Documentos
+  361  ls
+  362  cd unix_tests
+  363  ls
+  364  grep Brazil countries.txt
+  365  grep -ic brazil countries.txt
+  366  cat > phrases.txt
+  367  ls
+  368  cat phrases.txt
+  369  wc 
+  370  ls
+  371  cd Documentos
+  372  ls
+  373  cd unix_tests
+  374  ls
+  375  wc phrases.txt
+  376  wc --help
+  377  wc -w phrases.txt
+  378  wc -l phrases.txt 
+  379  touch empty.tbt
+  380  ls
+  381  touch empty.pdf
+  382  ls ?.txt
+  383  ls *.txt
+  384  ls *.tbt *.txt
+  385  ls
+  386  grep -iv fox.txt
+  387  ls
+  388  cd Trybe_Curso
+  389  ls
+  390  mkdir modulo-fundamentos modulo-front-end 
+  391  ls
+  392  mkdir modulo-back-end modulo-ciencia-da-computação
+  393  ls
+  394  cd modulo-fundamentos
+  395  cd ..
+  396  mv modulo-fundamentos fundamentos
+  397  ls
+  398  mv modulo-back-end back-end
+  399  ls
+  400  mv modulo-front-end front-end
+  401  ls
+  402  mv modulo-ciencia-da-computação ciencia-da-computação
+  403  ls
+  404  cd fundamentos
+  405  mkdir unix-shell git-github intodução-HTML-CSS
+  406  ls
+  407  cd unix-shell
+  408  ls
+  409  clear
+  410  cd ..
+  411  ls
+  412  cd Documentos
+  413  ls
+  414  mv unix_tests /home/amadeus/Trybe_Curso
+  415  ls
+  416  cd ..
+  417  ls
+  418  cd Trybe_Curso
+  419  ls
+  420  mv unix_test home/amadeus/Trybe_Curso/fundamentos/
+  421  ls
+  422  cd fundamentos
+  423  ls
+  424  pwd
+  425  cd ..
+  426  ls
+  427  mv unix_tests /home/amadeus/Trybe_Curso/fundamentos/unix-shell
+  428  ls
+  429  cd fundamentos
+  430  ls
+  431  cd unix-shell
+  432  ls
+  433  clear
+  434  cd ..
+  435  ls
+  436  cd Trybe_Curso
+  437  ls
+  438  cd fundamentos
+  439  ls
+  440  cd unix-shell
+  441  ls
+  442  mkdir dia-2
+  443  ls
+  444  mv unix_tests ../
+  445  ls
+  446  cd ..
+  447  ls
+  448  mv unix_tests home/amadeus/Trybe_Curso/fundamentos/unix-shell/dia-2
+  449  ped
+  450  pwd
+  451  mv unix_tests home/amadeus/Trybe_Curso/fundamentos/unix-shell/dia-2
+  452  ls
+  453  mv /home/amadeus/Trybe_Curso/fundamentos/unix-shell
+  454  mv --help
+  455  ls
+  456  cd unix-shell
+  457  ls
+  458  cd dia-2
+  459  ls
+  460  ped
+  461  pwd
+  462  cd ..
+  463  ls
+  464  cd..
+  465  cd ..
+  466  ls
+  467  mv unix_tests home/amadeus/Trybe_Curso/fundamentos/unix_shell/dia-2
+  468  mv unix_tests /unix-shell
+  469  clear
+  470  ls
+  471  pwd
+  472  ls
+  473  cd Trybe_Curso
+  474  ls
+  475  cd fundamentos
+  476  ls
+  477  cd unix-shell
+  478  ls
+  479  cd dia-2
+  480  ls
+  481  cat > cores.txt
+  482  ls
+  483  cat cores.txt
+  484  clear
+  485  cat >> cores.txt
+  486  ls
+  487  cat cores.txt
+  488  cat > frutas.txt
+  489  ls
+  490  cat cores-frutas.txt
+  491  clear
+  492  sort < cores.txt
+  493  ls -l
+  494  cat > arquivo.txt
+  495  ls
+  496  ls -l
+  497  ll
+  498  ps
+  499  clear
+  500  ps
+  501  sleep 100 &
+  502  jobs
+  503  sleep 150 & 
+  504  jobs
+  505  sleep 200
+  506  ls
+  507  jpbs
+  508  jobs
+  509  ps
+  510  sleep 300
+  511  fg %1
+  512  jobs
+  513  ps
+  514  ll
+  515  ls
+  516  cd Trybe_Curso
+  517  ls
+  518  clear
+  519  history
+  520  history | head
+  521  history | tail -2
+  522  find . name "*.txt"
+  523  echo "Este é um dia bom"
+  524  ls
+  525  echo "Diretorio que contem todos os exercicios desenvolvidos ao longo do curso da Trybe." > readme.txt
+  526  cat readme.txt
+  527  clear
+  528  who
+  529  ls
+  530  cd Trybe_Curso/fundamentos/unix-shell
+  531  ls
+  532  cd dia-2
+  533  ls
+  534  cd unix_tests
+  535  ls
+  536  touch skills2.txt
+  537  ls
+  538  cat > skills2.txt
+  539  cat >> skills2.txt
+  540  ls
+  541  cat skills2.txt
+  542  sort skills2.txt
+  543  wc -l skills2.txt
+  544  head -3 skills2.txt
+  545  sort -3 skills2.txt
+  546  sort < skills2.txt > top_skills.txt
+  547  ls
+  548  cat top_skills.txt
+  549  sort -g skills2.txt
+  550  cat skills2.txt
+  551  cat | sort | head -3 skills2.txt > top_skill1s.txt
+  552  ls
+  553  cat top_skill1s.txt
+  554  head -3 skills2.txt | sort > top_skills.txt
+  555  ls
+  556  cat top_skills.txt
+  557  sort skills2.txt | head -3 |sort > top_skills.txt
+  558  cat top_skills.txt
+  559  touch phrases2.txt
+  560  ls
+  561  cat > phrases2.txt
+  562  ls
+  563  cat phrases.txt
+  564  grep -iv br phrases2.txt | wc -l 
+  565  grep -iv br phrases2.txt
+  566  wc -l phrases2.txt
+  567  wc -l phrases2.txt | grep -iv "br"
+  568  grep "br" phrases2.txt
+  569  grep "br" phrases2.txt | wc -l
+  570  grep -iv "br" phrases2.txt | wc -l
+  571  cat >> phrases2.txt 
+  572  cat phrases2.txt
+  573  cat phrases2.txt countries.txt > bunch_of_things.txt
+  574  ls
+  575  sort bunch_of_things.txt 
+  576  ls -l
+  577  chmod 666 bunch_of_things.txt
+  578  ls -l
+  579  chmod 444 bunch_of_things.txt
+  580  ls -l
+  581  chmod 644 bunch_of_things.txt
+  582  ls -l
+  583  history > historico1.txt
+  584  ls
+  585  cat historico1.txt
+  586  history | tail -300 | cat > historico1.txt

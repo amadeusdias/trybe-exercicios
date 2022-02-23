@@ -1,0 +1,16 @@
+vermelho
+amarelo
+azul
+verde
+preto
+branco
+violeta
+magenta
+laranja
+verde
+lilas
+rosa
+rosa choque
+marrom
+terra
+cinza

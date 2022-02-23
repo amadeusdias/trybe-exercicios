@@ -1,0 +1,186 @@
+[In reply to Trybe - Turma 21]
+sobre digitar durante as aulas, em minha defesa: 
+Unix = pai de todos os sistemas operacionais, com interface, multitarefa e com portabilidade. Linux, windows e mac são baseados nele
+unix possui 3 níveis:
+1o nível: kernell:
+
+responsável por fazer a ligação entre hardware e software. Ele é o cérebro do SO, e gerencia os recursos do sistema permitindo que os programas
+façam uso deles.
+
+Quando o pc liga ele inicia a detecção de todos os hardwares considerados fundamentais para o funcionamento do computador: gpu, ram, monitor etc.
+SO é carregado logo em seguida, e uma vez feito o login, o kernell passa a gerenciar todas as funções do SO, como pastas por exemplo, gerenciamento de 
+memórias, de processos e de arquivos
+
+
+Segundo nível: Shell: É a interface entre o SO, o usuário e o núcleo do sistema(kernell).
+
+primeiro processo a ser executado após login é o shell.
+
+shell usa interface de linha de comando / command line ou interface do usuário / graphic user interface
+
+função do shell: ler linha de comando > interpretar significado > executar comando > devolver ao usuário
+
+exemplos de shell: sh, bash, csh, tcsh e zsh
+
+"CLI = command line interface"
+
+GUIs = graphic user interface = aplicativos gráficos. Ex: windows explorer
+
+2 formas de interação: CLI vs GUI
+
+terceira camada: aplicativos. Nessa camada encaixam-se os softwares e maioria dos comandos do unix.
+
+outros pontos importantes do unix: processos e arquivos.
+
+Sempre que é executado um comando, ele é interpretado pelo unix como sendo um processo.
+
+cada processo possui um identificador único chamado PID, process identifier, que carrega algumas informações como:
+
+Usuário proprietário do processo, sessão do shell, estado atual(se está funcionando, suspenso ou aguardando), linha de comando utilizada,
+dentre outras informações.
+
+Além disso, temos os arquivos: no unix, tudo é um arquivo. Diretórios são arquivos, arquivos são arquivos, e dispositivos são arquivos.
+
+Sistemas de arquivos do unit são organizados em hierarquia de raiz. O nível mais alto do sistema de arquivos é o "/" ou root ou diretório raiz
+todos os outros arquivos e diretórios existem debaixo do diretório root.
+
+cada arquivo possui uma série de informações como: tipo, permissões, dono, grupo, tamanho, data e hora da última modificação e nome.
+
+
+hierarquia do unix, como funciona:
+
+/: é o diretório raiz ou root
+boot: arquivos de configuração para inicialização
+bin: aplicativos binários
+dev: arquivos do dispositivo
+etc: scripts de inicialização
+home: diretório home para diferentes usuários
+proc: diretório dinâmico especial que mantém informações sobre o estado do sistema, inclusive os processos atualmente executados
+root: diretório home do usuário root
+sbin: binários importantes do sistema
+tmp: arquivos temporários
+usr: aplicativos e arquivos na maioria das vezes disponíveis para todos os usuários
+var: arquivos variáveis como logs e bancos de dados
+
+como trabalhar com diretórios no unix na prática:
+
+comandos no terminal:
+
+ls = lista todos os arquivos existentes naquele diretório, inclusive outros diretórios
+ls -a = mostra arquivos do diretório E arquivos ocultos
+cd = change directory = muda o diretório em que está sendo acessado
+clear = joga para cima os comandos = "limpa a tela" do cmd
+mkdir = make directory = cria um diretório novo.
+pwd: mostra o diretório completo, ou o "caminho completo" para o nosso diretório
+
+variações do comando cd:
+cd . = referencia o próprio diretório onde estamos
+cd .. = retorna ao diretório pai
+
+obs: os diretórios que guardam arquivos do usuário no mac se chama users, e no linux se chama home
+
+
+cp "arquivo a ser copiado" "arquivo que será cópia"
+= copia arquivos, colocando o nome do arquivo a ser copiado e então o nome do arquivo que será criado com a cópia
+cat = mostra o conteúdo do arquivo
+mv "nome do arquivo" "arquivo novo" = apaga o arquivo antigo e move seu conteúdo para o novo arquivo criado
+mv "nome do arquivo" "caminho do arquivo para onde gostaria de movê-lo"
+rm "nome do arquivo" = remove = apaga o arquivo
+rmdir = "remove directory" = apaga o d
+
+cat > arquivo = cria arquivo com o conteúdo que será colocado como entrada, devendo ser encerrado o modo de entrada
+com ctrl d
+
+cat >> arquivo = insere os elementos de entrada no arquivo já existente, também terminando o modo entrada com ctrl
+d
+
+sort < arquivo = exibe em ordem alfabética, mas apenas como output, sem realmente alterar no arquivo
+
+sort < arquivo > arquivo2 = cria uma output em ordem alfabética e armazena essa ordem em outro arquivo
+
+who = mostra quem são os usuários com acesso ao terminal
+
+who | sort = output do who é enviado e processado pelo comando sort, exibindo como output final a lista who em ordem alfabética
+
+who | wc -l = output do who é enviado e processado pelo comando wc -l, exibindo como output final
+a quantidade linhas e portanto, de usuários finais do terminal
+
+
+ls -l = exibe informações de acesso dos usuários, e cada caractere exibido entre os usuários possui significados:
+r: read, significa que pode ler o arquivo
+w: write, significa que pode escrever no arquivo ou editar conteúdo do diretório
+x: pode executar ou acessar um diretório através do cd
+hífen: no início da sequencia, significa que é um arquivo comum
+D: no início da sequencia, significa que é um diretório
+
+
+A sequencia de caracteres pode ser separada em 4 grupos:
+
+-rw-r--r--: 
+- = arquivo comum(seria d se fosse diretório);
+RW- = usuário => pode ler, escrever mas não executar, por isso o hífen no final;
+R-- = grupo do usuário => pode ler, mas não escrever nem executar
+R-- = grupo de fora => pode ler, mas não escrever nem executar
+
+u = usuário
+g = grupos
+o = outros
+
+chmod = modifica permissão
+chmod u- = retira permissão de interação com o arquivo, podendo inserir rwx na frente para dizer do que queremos tirar a permissão
+chmod u+ = adiciona permissão de interação com o arquivo, podendo inserir rwx para selecionar qual(is) permissões queremos conceder
+
+
+permissões: drwxr-xr-x | links: 2 | proprietário: root | tamanho: 4096
+
+
+Permissões => É possível verificar o tipo do item e nível de permissão para Leitura, Escrita e Execução de item ou diretório;
+Links => Número de ligações que o item possui, no caso do diretório, número de subdiretórios que possui;
+Proprietário => Quem é a pessoa dona, quem criou. É o diretório padrão da pessoa usuária, o home;
+Grupo => Grupo ao qual pertence o item ou diretório. Utilizado para dar permissões à outras pessoas;
+Tamanho => Em Bytes;
+Data e Hora => Momento em que foi criado ou última modificação;
+Nome => Nome do item ou diretório;
+
+Existe o modo octal para trocar permissões:
+
+leitura r = 4
+escrita w = 2
+execução x = 1
+
+esses valores são permissões com base em bits de ligados = 1 e desligados = 0
+
+rwx = 111 ( 7 | Acesso Total )
+r-- = 100 ( 4 | Somente Leitura )
+-w- = 010 ( 2 | Somente Escrita )
+--x = 001 ( 1 | Somente Execução )
+rw- = 110 ( 6 | Somente Leitura e Escrita )
+r-x = 101 ( 5 | Somente Leitura e Execução )
+-wx = 011 ( 3 | Somente Escrita e Execução )
+--- = 000 ( 0 | Todos Acessos Negados )
+
+Portanto, cada vez que você liga a chave de leitura, atribui-se o valor para esta chave somando-se com as demais chaves 
+de administração de escrita e execução caso você também deseje ligá-las. A sintaxe para 
+realizar esta alteração continua a mesma que no modo literal, sendo chmod 766 [arquivo ou diretório] .
+ Cada número corresponde aos grupos de pessoas usuárias, de grupo e de outras pessoas usuárias.
+
+vão haver vários processos sendo executados ao mesmo tempo, unix é considerado multiprocesso por ter vários processos 
+funcionando.
+
+Alguns comandos podem ser usados para manipular processo/criar processo:
+
+sleep n = faz com que o terminal durma por aquele tempo
+
+podemos criar processos e deixá-los em background
+
+sleep 10 & = & deixa o processo em background, isso retornará o número do processo e o qual era o seu comando.
+
+
+podemos botar o processo pra ser continuado
+
+processos que estãos sendo executados ficam em uma lista chamada jobs
+
+ao colocar um em background:
+
+jobs = esse comando mostra os processos que e
+
