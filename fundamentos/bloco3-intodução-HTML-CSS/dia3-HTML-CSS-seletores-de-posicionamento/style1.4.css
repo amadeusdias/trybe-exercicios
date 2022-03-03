@@ -1,0 +1,49 @@
+
+ol{
+    background-color: yellow;
+}
+
+ol li:nth-child(even){
+    color:green;
+}
+ol li:nth-child(odd){
+    text-transform: uppercase;
+}
+
+.header{
+    color:red;
+}
+.ita{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+
+#lista1 li:nth-child(-n+3) {
+    color:royalblue;
+}
+
+.java{
+    background-color: pink;
+}
+#trybe:hover{
+    background-color: green;
+}
+#devdocs:hover{
+    background-color: yellowgreen;
+}
+#mdn:hover{
+    background-color: black;
+}
+#w3school:hover{
+    background-color: #abeeab;
+}
+#stack:hover{
+    background-color: orange;
+}

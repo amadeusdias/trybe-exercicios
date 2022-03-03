@@ -1,0 +1,21 @@
+h1, p{
+    text-align: center;
+}
+
+ol:hover{
+    background-color:red;
+}
+
+ol:active{
+    font-family: monospace;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+
+
+
+
+
