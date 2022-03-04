@@ -8,6 +8,8 @@ header{
 h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    font-size: x-large;
+    color:black;
 }
 
 section {
@@ -35,5 +37,5 @@ aside{
 
 p{
     font-size: x-large;
-    color:black;
+    color:black
 }
