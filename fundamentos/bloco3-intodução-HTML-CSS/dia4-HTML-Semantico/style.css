@@ -1,0 +1,39 @@
+header{
+    font-size:xx-large;
+    text-align: center;
+    background-color: aliceblue;
+    border-color: antiquewhite;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    background-color:slategray;
+}
+
+ul {
+    list-style: none;
+    background-color: aliceblue;
+}
+
+.sumariozin{
+    display:inline;
+    margin-left: 20%;
+    background-color: aliceblue;
+    font-size:x-large;
+
+}
+
+aside{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+p{
+    font-size: x-large;
+    color:black;
+}
