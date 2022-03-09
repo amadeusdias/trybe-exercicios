@@ -5,7 +5,5 @@ for(let i = 0; i < numbers.length; i += 1){
         maiorValor = numbers[i];
     }
     
-       
-    
 }
 console.log(maiorValor)
