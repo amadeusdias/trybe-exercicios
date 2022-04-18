@@ -46,4 +46,18 @@ function contar() {
 }
 botão.addEventListener("click", contar);
 
+//4-
+var skillsList = ['JavaScrip', 'CSS', 'React', 'HTML', 'Node'];
+let stringDet = 'Jesus botou fogo no x';
+let stringPar = 'Chosen One';
+const bolar = (string) => {
+    const result = stringDet.replace(/x/g, string);
+    return result;   
+}
+console.log(bolar(stringPar));
 
+const viagem = (result) => {
+   let result2 = result.concat(" ", skillsList.sort())
+   return result2
+}
+console.log(viagem(bolar(stringPar)));
