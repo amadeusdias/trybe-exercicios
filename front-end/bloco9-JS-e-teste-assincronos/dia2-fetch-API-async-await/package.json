@@ -1,5 +1,18 @@
 {
   "dependencies": {
     "node-fetch": "^3.2.5"
-  }
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  },
+  "name": "dia2-fetch-api-async-await",
+  "version": "1.0.0",
+  "main": "apiScript.js.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
