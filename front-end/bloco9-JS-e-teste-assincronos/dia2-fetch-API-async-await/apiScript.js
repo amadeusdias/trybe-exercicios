@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const fetch = require('node-fetch')
 
 // 1. Como primeiro exercício, vamos usar a função fetch, que vimos na aula ao vivo, para criar um site simples com um gerador de piadas ruins!. Como? Vamos praticar!
 // Primeiro, veja o manual da API do site icanhazdadjoke.com. Ele esclarece como fazer as requisições ao serviço de piadas. Por hora, pode só passar o olho; agora vamos entender como funciona essa API:
@@ -14,6 +14,19 @@ const API_URL = 'https://icanhazdadjoke.com/';
 
 const fetchJoke = () => {
   // Adicionar lógica aqui!
+  const myObj = {
+    method: 'GET',
+    headers: { 'Accept': 'application/json' }
+  };
+
+  fetch(API_URL, myObj)
+  .then(response => response.json())
+  .then(data =>
+    document.getElementById('jokeContainer').innerText = data.joke);
 };
+
+//data é um objeto com as chaves id e joke, a primeira tem uma id e a segunda a piada correspondente a esse id, essa saida so pode ser vista no navegador. Lembre-se que ao fazer uma fetch a sua resposta, alem de ser uma promise, é, quase sempre, um objeto. 
+
+// em vez de criar um elemento novo para segurar a resposta da função e depois colocar esse elemento dentro do html simplismente pegue o h2 do html corrente e altere seu innerText, colocando o data la dentro. É mais limpo e faz muito mais sentido, ja que o elemento H2 ja esta vazio. 
 
 window.onload = () => fetchJoke();
